@@ -24,6 +24,9 @@
             Console.WriteLine("Average: " + gradeList.getAverage());
             Console.WriteLine("Size: " + gradeList.getSize());
 
+            Grade grade2 = gradeList.getGrade((student1.getStudentID()));
+            Console.WriteLine(grade2.getPoint());
+
 
         }
     }

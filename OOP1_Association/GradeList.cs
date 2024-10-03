@@ -23,10 +23,25 @@ namespace OOP1_Association
             return this._size;
         }
 
-        public Grade getGrade(int index)
+        public Grade getGrade(int id)
         {
-            return _grade[index];
+            //int result;
+            foreach (Grade grade in _grade)
+            {
+                if (grade.getStudentID() == id)
+                {
+                    return grade;
+                }
+                else
+                {
+                    Console.WriteLine("Student ID not found");
+                }
+            }
+
+            return null;
         }
+
+
 
         public void addGrade(Grade grade)
         {
